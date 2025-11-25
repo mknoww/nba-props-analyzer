@@ -1,16 +1,3 @@
-# src/app.py
-"""
-Flask API for the NBA props analyzer.
-
-Endpoints:
-  - GET /health
-  - GET /analyze?min_ev=<float>&explain=<true|false>
-
-If VLLM_BASE_URL is set in the environment, the /analyze endpoint can call
-a vLLM server (OpenAI-compatible) to generate short natural-language
-explanations for the top props.
-"""
-
 from __future__ import annotations
 
 import os
