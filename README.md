@@ -2,10 +2,12 @@ Write-up:
 
 ## 1) Executive Summary
 
-### Problem: When betting on NBA players on apps like PrizePicks, their player props can be difficult to gauge and determine whether they will yield a profit. Betters always consider the odds of a prop actually hitting and how likely it is to return a profit; however, there is no reliable tool to see these odds. Most betting apps will only show the line (an NBA player hitting a certain stat) without being able to see the expected value of their bet in a clear and concise way.
+### Problem: 
+When betting on NBA players on apps like PrizePicks, their player props can be difficult to gauge and determine whether they will yield a profit. Betters always consider the odds of a prop actually hitting and how likely it is to return a profit; however, there is no reliable tool to see these odds. Most betting apps will only show the line (an NBA player hitting a certain stat) without being able to see the expected value of their bet in a clear and concise way.
 
 
-### Solution: This project leads the user to a simple web-based resource that helps bettors see the NBA player they are betting on in a more informed way using data. When looking at player props, for example, Stephen Curry scoring over 25.5 Points, instead of using your intuition to place your bet, this resource allows you to look at this player prop and immediately see the likelihood of a favorable or unfavorable bet through a basic model. The data comes from a small table of player props, each cell containing concise stats from each player, which is then calculated to produce the chance of a success and the expected return per dollar (expected value). Once calculated, the results are displayed where you can filter by value and compare with different players, allowing bettors to efficiently browse through different props. I customized this project to make it have similar props and results to PrizePicks bets.
+### Solution: 
+This project leads the user to a simple web-based resource that helps bettors see the NBA player they are betting on in a more informed way using data. When looking at player props, for example, Stephen Curry scoring over 25.5 Points, instead of using your intuition to place your bet, this resource allows you to look at this player prop and immediately see the likelihood of a favorable or unfavorable bet through a basic model. The data comes from a small table of player props, each cell containing concise stats from each player, which is then calculated to produce the chance of a success and the expected return per dollar (expected value). Once calculated, the results are displayed where you can filter by value and compare with different players, allowing bettors to efficiently browse through different props. I customized this project to make it have similar props and results to PrizePicks bets.
 
 
 ## 2) System Overview
@@ -68,12 +70,12 @@ docker run --rm -p 8080:8080 nba-props-analyzer:latest
 # health check
 curl http://localhost:8080/health
 
---------
+
 Without Docker:
 
 pip install -r requirements.txt
 python src/app.py
----------
+
 
 ## 4) Design Decisions
 
