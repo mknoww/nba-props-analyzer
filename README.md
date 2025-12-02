@@ -73,9 +73,8 @@ Without Docker:
 
 pip install -r requirements.txt
 python src/app.py
+---------
 
-
-## 4) Design Decisions
 ## 4) Design Decisions
 
 ### Why this concept? Alternatives considered and why not chosen
@@ -121,7 +120,6 @@ In this example, the user has selected a Trae Young points prop, and the app dis
   - EV per $1 changes appropriately when `model_prob` changes.
 
 ## 6) What's Next? 
-## 6) What’s Next
 
 - **Live odds and auto-updating model:**  
 This program currently uses a static CSV, and a big next step is connecting the service to a live data source so we can update the line and probabilities throughout the day. For this we can (a) find an odds API with a documented way to read that data or (b) web scrape lines from betting sites that allow it and pipe it into `pipeline.py`. Then, for each game, a `model_prob` might be fed with live lines, log of games just played, or a small historical model, to keep the EV numbers from being just a one-off snapshot.
