@@ -33,6 +33,7 @@ This project ties directly into several course concepts around modern service-ba
 ---
 
 ### Architecture Diagram:
+![Architecture Diagram](assets/architecture-diagram.png)
 
 ### Data/Models/Services:
 - `assets/sample_props.csv`  
