@@ -69,12 +69,14 @@ docker run --rm -p 8080:8080 nba-props-analyzer:latest
 
 # health check
 curl http://localhost:8080/health
-
+```
 
 Without Docker:
 
+```bash
 pip install -r requirements.txt
 python src/app.py
+```
 
 
 ## 4) Design Decisions
